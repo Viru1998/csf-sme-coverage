@@ -1,0 +1,336 @@
+# ============================================================================
+# IRISH CONTEXT — MTU/NCSC State of the Sector 2025 + NCSC Ireland SME Guidance
+# ============================================================================
+#
+# Purpose: overlay Irish-specific empirical evidence and prescriptive guidance
+# onto the Verizon-derived global SMB analysis, so the dissertation can answer
+# the examiner's inevitable question: "how does this apply to Irish SMEs?"
+#
+# Three data blocks below:
+#   1. top_10_gaps      — MTU/NCSC quantified weakness data (percentages)
+#   2. function_gaps    — MTU/NCSC per-CSF-Function readiness statistics
+#   3. ncsc_ie_measures — NCSC Ireland's prescriptive 6 measures + 12 Steps
+#
+# Every data point cited to a specific page in a specific source.
+# Every mapping to CSF 2.0 Subcategories is an author judgement made
+# transparent for the examiner.
+#
+# Version 1.0 — 2026-07-06.
+# ============================================================================
+
+metadata:
+  primary_source: "MTU and NCSC (2025). SME Cyber Resilience: State of the Sector 2025."
+  secondary_source: "NCSC Ireland (2025). Cyber Security for Small Business (SME Guidance)."
+  sample_size_mtu_ncsc: 894
+  sectors_covered: 11
+  irish_sme_share_of_all_enterprises: 0.998
+  compiled_by: "Viraj Ananda Gawde"
+  date: "2026-07-06"
+
+
+# ============================================================================
+# BLOCK 1 — Top 10 quantified weaknesses among Irish SMEs
+# ----------------------------------------------------------------------------
+# Each entry names a weakness, records the observed adoption percentage
+# (i.e. the fraction of Irish SMEs that DO have the control), computes the
+# implied gap (100% - adoption), and maps to the CSF 2.0 Subcategories that
+# would address it.
+# ============================================================================
+
+top_10_gaps:
+
+  - rank: 1
+    weakness: "Data Backups (automated)"
+    adoption_pct: 26
+    gap_pct: 74
+    source: "MTU and NCSC 2025, p.7 - only 26% have automated data backup process"
+    csf_subcategories: [PR.DS-11]
+
+  - rank: 2
+    weakness: "Multi-Factor Authentication on business-critical apps"
+    adoption_pct: 39
+    gap_pct: 61
+    source: "MTU and NCSC 2025, p.7 - only 39% have MFA on all business-critical applications"
+    csf_subcategories: [PR.AA-03, PR.AA-04]
+
+  - rank: 3
+    weakness: "Cyber Incident Response Plan (documented and tested)"
+    adoption_pct: 22
+    gap_pct: 78
+    source: "MTU and NCSC 2025, p.7 - only 22% have a Cyber Incident Response Plan or tested plan"
+    csf_subcategories: [RS.MA-01, RS.MA-02, GV.PO-01]
+
+  - rank: 4
+    weakness: "Cybersecurity Training (annual)"
+    adoption_pct: 26
+    gap_pct: 74
+    source: "MTU and NCSC 2025, p.7 - only 26% trained in last year; 40% have never trained"
+    csf_subcategories: [PR.AT-01, PR.AT-02, GV.RR-04]
+
+  - rank: 5
+    weakness: "Business Continuity Planning"
+    adoption_pct: 35
+    gap_pct: 65
+    source: "MTU and NCSC 2025, p.7 - only 35% have a BCP in place"
+    csf_subcategories: [RC.RP-01, GV.PO-02]
+
+  - rank: 6
+    weakness: "Password Policy (minimum length enforced)"
+    adoption_pct: 38
+    gap_pct: 62
+    source: "MTU and NCSC 2025, p.7 - only 38% enforce minimum password length"
+    csf_subcategories: [PR.AA-01, GV.PO-01]
+
+  - rank: 7
+    weakness: "Documented Cybersecurity Policy"
+    adoption_pct: 12
+    gap_pct: 88
+    source: "MTU and NCSC 2025, p.7 - only 12% have a documented cybersecurity policy"
+    csf_subcategories: [GV.PO-01, GV.PO-02]
+
+  - rank: 8
+    weakness: "Dedicated Network Security Management"
+    adoption_pct: 30
+    gap_pct: 70
+    source: "MTU and NCSC 2025, p.7 - only 30% have an individual assigned to manage network security"
+    csf_subcategories: [PR.IR-01, GV.RR-01, GV.RR-02]
+
+  - rank: 9
+    weakness: "Automatic Software Updates"
+    adoption_pct: 39
+    gap_pct: 61
+    source: "MTU and NCSC 2025, p.7 - only 39% have automatic software updates enabled"
+    csf_subcategories: [ID.RA-08, PR.PS-02]
+
+  - rank: 10
+    weakness: "VPN Usage for Remote Work"
+    adoption_pct: 24
+    gap_pct: 76
+    source: "MTU and NCSC 2025, p.7 and p.10 - only 24% of remote workers use a VPN"
+    csf_subcategories: [PR.IR-01, PR.AA-05]
+
+
+# ============================================================================
+# BLOCK 2 — Per-Function Irish readiness statistics
+# ----------------------------------------------------------------------------
+# Coarse-grained view of where Irish SMEs' resilience is weakest by CSF Function.
+# Each entry is a specific pain-point statistic from MTU/NCSC pp.9-11.
+# ============================================================================
+
+function_gaps:
+
+  Govern:
+    - stat: "SMEs relying solely on the SME Owner for cybersecurity responsibility"
+      gap_pct: 63
+      source: "MTU and NCSC 2025, p.9"
+      csf_subcategories: [GV.RR-01, GV.RR-02]
+
+    - stat: "SMEs with no or ad-hoc cybersecurity training"
+      gap_pct: 67
+      source: "MTU and NCSC 2025, p.9"
+      csf_subcategories: [PR.AT-01, GV.RR-04]
+
+    - stat: "SMEs operating without a tested Business Continuity Plan"
+      gap_pct: 86
+      source: "MTU and NCSC 2025, p.9"
+      csf_subcategories: [RC.RP-01, GV.PO-02]
+
+  Identify:
+    - stat: "SMEs lacking an up-to-date hardware inventory"
+      gap_pct: 75
+      source: "MTU and NCSC 2025, p.9"
+      csf_subcategories: [ID.AM-01]
+
+    - stat: "SMEs lacking an up-to-date software inventory"
+      gap_pct: 74
+      source: "MTU and NCSC 2025, p.9"
+      csf_subcategories: [ID.AM-02, ID.AM-08]
+
+    - stat: "SMEs not covered by cyber insurance"
+      gap_pct: 82
+      source: "MTU and NCSC 2025, p.9"
+      csf_subcategories: [ID.RA-05, GV.RM-04]
+
+  Protect:
+    - stat: "SMEs without MFA on all business-critical applications"
+      gap_pct: 74
+      source: "MTU and NCSC 2025, p.10"
+      csf_subcategories: [PR.AA-03, PR.AA-04]
+
+    - stat: "SMEs operating without automated backup solutions"
+      gap_pct: 69
+      source: "MTU and NCSC 2025, p.10"
+      csf_subcategories: [PR.DS-11]
+
+    - stat: "Remote workers not using a VPN"
+      gap_pct: 76
+      source: "MTU and NCSC 2025, p.10"
+      csf_subcategories: [PR.IR-01, PR.AA-05]
+
+  Detect:
+    - stat: "SMEs with antivirus not fully enabled across all devices"
+      gap_pct: 49
+      source: "MTU and NCSC 2025, p.10 - 77% installed but only 51% fully enabled"
+      csf_subcategories: [DE.CM-09, PR.PS-05]
+
+    - stat: "SMEs with no antivirus at all"
+      gap_pct: 27
+      source: "MTU and NCSC 2025, p.10"
+      csf_subcategories: [PR.PS-05, DE.CM-09]
+
+    - stat: "SMEs without automatic software updates"
+      gap_pct: 63
+      source: "MTU and NCSC 2025, p.10"
+      csf_subcategories: [ID.RA-08, PR.PS-02]
+
+    - stat: "SMEs lacking a designated person for network security"
+      gap_pct: 67
+      source: "MTU and NCSC 2025, p.10"
+      csf_subcategories: [PR.IR-01, GV.RR-01]
+
+  Respond:
+    - stat: "SMEs lacking a formal Cyber Incident Response Plan"
+      gap_pct: 67
+      source: "MTU and NCSC 2025, p.11"
+      csf_subcategories: [RS.MA-01, RS.MA-02]
+
+    - stat: "SMEs with IR plan but never tested"
+      gap_pct: 64
+      source: "MTU and NCSC 2025, p.11 - only 36% of those with IR plan have tested it"
+      csf_subcategories: [RS.MA-03]
+
+    - stat: "SMEs without a documented Cybersecurity Policy"
+      gap_pct: 67
+      source: "MTU and NCSC 2025, p.11"
+      csf_subcategories: [GV.PO-01, GV.PO-02]
+
+  Recover:
+    - stat: "SMEs without immutable data backups"
+      gap_pct: 77
+      source: "MTU and NCSC 2025, p.11"
+      csf_subcategories: [PR.DS-11, RC.RP-01]
+
+    - stat: "SMEs without website backups"
+      gap_pct: 58
+      source: "MTU and NCSC 2025, p.11"
+      csf_subcategories: [PR.DS-11, RC.RP-03]
+
+    - stat: "SMEs without dedicated cloud backup"
+      gap_pct: 83
+      source: "MTU and NCSC 2025, p.11"
+      csf_subcategories: [PR.DS-11]
+
+
+# ============================================================================
+# BLOCK 3 — NCSC Ireland prescriptive measures
+# ----------------------------------------------------------------------------
+# The 6 core measures NCSC IE recommends for Irish SMEs, mapped to CSF 2.0
+# Subcategories they operationalise.
+# ============================================================================
+
+ncsc_ie_measures:
+
+  - number: 1
+    title: "Identify what matters most"
+    description: "Understand what data, systems and processes are critical to the business"
+    source: "NCSC Ireland 2025, p.7"
+    csf_subcategories: [ID.AM-01, ID.AM-02, ID.AM-05, ID.RA-01]
+
+  - number: 2
+    title: "Keep devices and software up-to-date"
+    description: "Apply security updates and patches promptly"
+    source: "NCSC Ireland 2025, p.8"
+    csf_subcategories: [ID.RA-08, PR.PS-02]
+
+  - number: 3
+    title: "Implement basic protections"
+    description: "Antivirus, firewall, secure configuration, employee awareness"
+    source: "NCSC Ireland 2025, p.9"
+    csf_subcategories: [PR.PS-01, PR.PS-05, DE.CM-09, PR.AT-01]
+
+  - number: 4
+    title: "Turn on Multi-Factor Authentication (MFA)"
+    description: "Especially for email, financial and administrator accounts"
+    source: "NCSC Ireland 2025, p.11"
+    csf_subcategories: [PR.AA-03, PR.AA-04]
+
+  - number: 5
+    title: "Back-up your information"
+    description: "Automated, tested, offsite/immutable backups"
+    source: "NCSC Ireland 2025, p.13"
+    csf_subcategories: [PR.DS-11, RC.RP-01]
+
+  - number: 6
+    title: "Create strong complex passwords"
+    description: "Long, unique, managed via a password manager"
+    source: "NCSC Ireland 2025, p.16"
+    csf_subcategories: [PR.AA-01, PR.AA-02]
+
+
+# ============================================================================
+# BLOCK 4 — ENISA European-lens corroboration
+# ----------------------------------------------------------------------------
+# ENISA Threat Landscape 2024 identifies 7 prime EU cybersecurity threats
+# (pp.4-8, "Executive Summary" and section 1.2 "Prime Threats"). Reported at
+# threat-category level rather than ATT&CK-technique level, so the mapping to
+# our Verizon-derived weighted techniques is qualitative rather than numeric.
+#
+# Purpose: one-paragraph Chapter 5 corroboration - "European-lens evidence
+# supports the same top-tier threat categories."
+# ============================================================================
+
+enisa_corroboration:
+  source: "ENISA (2024). ENISA Threat Landscape 2024. European Union Agency for Cybersecurity, September 2024."
+  reporting_period: "July 2023 to June 2024"
+  focus: "EU-wide, cross-sector cyber threat landscape"
+  quote_p5: |
+    "7 prime cybersecurity threats were identified, with threats against
+     availability topping the chart and followed by ransomware and threats
+     against data."
+
+  prime_threats:
+
+    - rank: 1
+      threat: "Ransomware"
+      description: "Threat actors take control of a target's assets and demand ransom for return of availability or non-disclosure of data"
+      source: "ENISA 2024, pp.4-5 (exec summary) and p.7 (definition)"
+      mapped_verizon_techniques: [T1486, T1490, T1489, T1657]
+
+    - rank: 2
+      threat: "Malware"
+      description: "Software or firmware intended to perform unauthorised processes with adverse impact on confidentiality, integrity, or availability"
+      source: "ENISA 2024, p.7"
+      mapped_verizon_techniques: [T1105, T1219, T1027]
+
+    - rank: 3
+      threat: "Social Engineering"
+      description: "Phishing, spear-phishing, whaling, smishing, vishing, watering hole, baiting, pretexting - manipulating humans to grant access"
+      source: "ENISA 2024, pp.7-8"
+      mapped_verizon_techniques: [T1566, T1566.001, T1566.002, T1204.002]
+
+    - rank: 4
+      threat: "Threats against data"
+      description: "Data breaches, unauthorised access to sensitive information, exfiltration"
+      source: "ENISA 2024, p.5"
+      mapped_verizon_techniques: [T1041, T1567.002, T1078, T1078.004, T1552]
+
+    - rank: 5
+      threat: "Threats against availability - Denial of Service"
+      description: "DDoS attacks aimed at disrupting availability of services"
+      source: "ENISA 2024, p.5"
+      mapped_verizon_techniques: []
+      note: "Not represented in our SME-relevant technique set; Verizon SMB pattern does not emphasise DoS for SMEs"
+
+    - rank: 6
+      threat: "Information manipulation and interference"
+      description: "Disinformation and influence operations, particularly during elections"
+      source: "ENISA 2024, p.5"
+      mapped_verizon_techniques: []
+      note: "Geopolitical threat category; not applicable to SME cybersecurity posture measurement"
+
+    - rank: 7
+      threat: "Supply chain attacks"
+      description: "Compromising third-party providers to reach the intended target"
+      source: "ENISA 2024, p.5"
+      mapped_verizon_techniques: []
+      note: "Not in current weighted set; would map to T1195 (Supply Chain Compromise). Consider adding in future revision if Irish supply-chain evidence warrants"

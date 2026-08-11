@@ -1,0 +1,8 @@
+enisa_rank,enisa_threat,in_verizon_weights,mapped_techniques,covered_techniques,verizon_weight_sum,note,source
+1,Ransomware,YES,T1486;T1490;T1489;T1657,T1486;T1490;T1489;T1657,0.76,,"ENISA 2024, pp.4-5 (exec summary) and p.7 (definition)"
+2,Malware,YES,T1105;T1219;T1027,T1105;T1219,0.12,,"ENISA 2024, p.7"
+3,Social Engineering,YES,T1566;T1566.001;T1566.002;T1204.002,T1566;T1566.001;T1566.002;T1204.002,0.22,,"ENISA 2024, pp.7-8"
+4,Threats against data,YES,T1041;T1567.002;T1078;T1078.004;T1552,T1041;T1567.002;T1078;T1078.004;T1552,0.62,,"ENISA 2024, p.5"
+5,Threats against availability - Denial of Service,NO,,,0.0,Not represented in our SME-relevant technique set; Verizon SMB pattern does not emphasise DoS for SMEs,"ENISA 2024, p.5"
+6,Information manipulation and interference,NO,,,0.0,Geopolitical threat category; not applicable to SME cybersecurity posture measurement,"ENISA 2024, p.5"
+7,Supply chain attacks,NO,,,0.0,Not in current weighted set; would map to T1195 (Supply Chain Compromise). Consider adding in future revision if Irish supply-chain evidence warrants,"ENISA 2024, p.5"

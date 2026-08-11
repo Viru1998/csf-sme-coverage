@@ -1,0 +1,11 @@
+irish_rank,weakness,irish_gap_pct,irish_adoption_pct,csf_subcategories,verizon_weighted_coverage_sum,verizon_raw_coverage_max,verizon_marginal_at_rank_max,verizon_best_greedy_rank,source
+1,Data Backups (automated),74,26,PR.DS-11,0.68,3,0.0,31,"MTU and NCSC 2025, p.7 - only 26% have automated data backup process"
+2,Multi-Factor Authentication on business-critical apps,61,39,PR.AA-03;PR.AA-04,2.11,17,0.0,20,"MTU and NCSC 2025, p.7 - only 39% have MFA on all business-critical applications"
+3,Cyber Incident Response Plan (documented and tested),78,22,RS.MA-01;RS.MA-02;GV.PO-01,0.0,0,0.0,0,"MTU and NCSC 2025, p.7 - only 22% have a Cyber Incident Response Plan or tested plan"
+4,Cybersecurity Training (annual),74,26,PR.AT-01;PR.AT-02;GV.RR-04,0.0,0,0.0,0,"MTU and NCSC 2025, p.7 - only 26% trained in last year; 40% have never trained"
+5,Business Continuity Planning,65,35,RC.RP-01;GV.PO-02,0.63,2,0.0,34,"MTU and NCSC 2025, p.7 - only 35% have a BCP in place"
+6,Password Policy (minimum length enforced),62,38,PR.AA-01;GV.PO-01,1.86,20,0.0,18,"MTU and NCSC 2025, p.7 - only 38% enforce minimum password length"
+7,Documented Cybersecurity Policy,88,12,GV.PO-01;GV.PO-02,0.0,0,0.0,0,"MTU and NCSC 2025, p.7 - only 12% have a documented cybersecurity policy"
+8,Dedicated Network Security Management,70,30,PR.IR-01;GV.RR-01;GV.RR-02,2.68,28,0.0,6,"MTU and NCSC 2025, p.7 - only 30% have an individual assigned to manage network security"
+9,Automatic Software Updates,61,39,ID.RA-08;PR.PS-02,2.76,14,0.0,21,"MTU and NCSC 2025, p.7 - only 39% have automatic software updates enabled"
+10,VPN Usage for Remote Work,76,24,PR.IR-01;PR.AA-05,5.02,28,0.05,6,"MTU and NCSC 2025, p.7 and p.10 - only 24% of remote workers use a VPN"

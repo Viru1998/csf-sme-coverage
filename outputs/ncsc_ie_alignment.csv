@@ -1,0 +1,7 @@
+ncsc_ie_measure_no,title,description,csf_subcategories,verizon_weighted_coverage_sum,verizon_raw_coverage_max,verizon_best_greedy_rank,source
+1,Identify what matters most,"Understand what data, systems and processes are critical to the business",ID.AM-01;ID.AM-02;ID.AM-05;ID.RA-01,4.39,27,7,"NCSC Ireland 2025, p.7"
+2,Keep devices and software up-to-date,Apply security updates and patches promptly,ID.RA-08;PR.PS-02,2.76,14,21,"NCSC Ireland 2025, p.8"
+3,Implement basic protections,"Antivirus, firewall, secure configuration, employee awareness",PR.PS-01;PR.PS-05;DE.CM-09;PR.AT-01,5.27,28,5,"NCSC Ireland 2025, p.9"
+4,Turn on Multi-Factor Authentication (MFA),"Especially for email, financial and administrator accounts",PR.AA-03;PR.AA-04,2.11,17,20,"NCSC Ireland 2025, p.11"
+5,Back-up your information,"Automated, tested, offsite/immutable backups",PR.DS-11;RC.RP-01,1.31,3,31,"NCSC Ireland 2025, p.13"
+6,Create strong complex passwords,"Long, unique, managed via a password manager",PR.AA-01;PR.AA-02,2.34,20,18,"NCSC Ireland 2025, p.16"

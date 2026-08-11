@@ -1,0 +1,41 @@
+[build-system]
+requires      = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "csf-sme-coverage"
+version         = "0.1.0"
+description     = "Threat-informed effectiveness measurement of NIST CSF 2.0 for SMEs"
+readme          = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Viraj Ananda Gawde", email = "x24135909@student.ncirl.ie" },
+]
+license = { text = "MIT" }
+
+# Runtime deps already managed via environment.yml / requirements.txt.
+# This list just makes `pip install -e .` complete-by-itself if someone
+# ever installs the package outside the Conda env.
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "scipy>=1.13",
+    "openpyxl>=3.1",
+    "pdfplumber>=0.11",
+    "pyyaml>=6.0",
+    "requests>=2.32",
+    "stix2>=3.0",
+    "mitreattack-python>=3.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

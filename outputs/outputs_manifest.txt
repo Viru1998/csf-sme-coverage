@@ -1,0 +1,20 @@
+# Outputs manifest
+# Generated automatically by report.py
+
+# file                                                       size  modified           
+# ------------------------------------------------------------------------------------------
+  combined_priority.csv                                    6.0 KB  2026-08-09 17:07:17
+  coverage_matrix.csv                                     12.4 KB  2026-08-09 17:07:17
+  enisa_corroboration.csv                                  1.1 KB  2026-08-09 17:07:17
+  figures\fig1_function_tactic_heatmap.png               392.7 KB  2026-08-09 17:07:18
+  figures\fig2_top20_combined_priority.png               392.4 KB  2026-08-09 17:07:19
+  figures\fig3_verizon_vs_irish_top10.png                378.5 KB  2026-08-09 17:07:20
+  figures\fig4_function_urgency_quadrant.png             218.4 KB  2026-08-09 17:07:20
+  figures\fig5_enisa_corroboration.png                   242.6 KB  2026-08-09 17:07:21
+  FINDINGS_SUMMARY.md                                     11.7 KB  2026-08-09 17:07:21
+  function_urgency.csv                                      328 B  2026-08-09 17:07:17
+  irish_gap_ranking.csv                                    1.7 KB  2026-08-09 17:07:17
+  ncsc_ie_alignment.csv                                    1.0 KB  2026-08-09 17:07:17
+  outputs_manifest.txt                                     1.5 KB  2026-08-09 16:48:46
+  residual_threats.csv                                    10.2 KB  2026-08-09 17:07:17
+  top20_subcategories.csv                                  5.3 KB  2026-08-09 17:07:17

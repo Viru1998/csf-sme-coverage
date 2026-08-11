@@ -1,0 +1,107 @@
+function_code,function,subcategory,weighted_coverage,irish_gap_pct,combined_score,greedy_rank,marginal_at_rank,raw_coverage,irish_gap_source
+PR,PROTECT,PR.IR-01,2.68,76,2.0368,6.0,0.0,28,MTU/NCSC top-10 #10: VPN Usage for Remote Work
+PR,PROTECT,PR.AA-05,2.34,76,1.7784,15.0,0.05,21,MTU/NCSC top-10 #10: VPN Usage for Remote Work
+DE,DETECT,DE.CM-09,2.68,49,1.3132,5.0,0.0,28,MTU/NCSC Detect: SMEs with antivirus not fully enabled across all devices
+PR,PROTECT,PR.AA-03,1.63,74,1.2062,20.0,0.0,17,MTU/NCSC Protect: SMEs without MFA on all business-critical applications
+PR,PROTECT,PR.AA-01,1.86,62,1.1532,18.0,0.0,20,MTU/NCSC top-10 #6: Password Policy (minimum length enforced)
+PR,PROTECT,PR.PS-02,1.61,63,1.0143,21.0,0.0,14,MTU/NCSC Detect: SMEs without automatic software updates
+ID,IDENTIFY,ID.AM-02,1.08,74,0.7992,26.0,0.0,14,MTU/NCSC Identify: SMEs lacking an up-to-date software inventory
+ID,IDENTIFY,ID.RA-08,1.15,63,0.7245,25.0,0.0,9,MTU/NCSC Detect: SMEs without automatic software updates
+ID,IDENTIFY,ID.AM-08,0.96,74,0.7104,27.0,0.0,7,MTU/NCSC Identify: SMEs lacking an up-to-date software inventory
+PR,PROTECT,PR.DS-11,0.68,83,0.5644,31.0,0.0,3,MTU/NCSC Recover: SMEs without dedicated cloud backup
+RC,RECOVER,RC.RP-01,0.63,86,0.5418,34.0,0.0,2,MTU/NCSC Govern: SMEs operating without a tested Business Continuity Plan
+ID,IDENTIFY,ID.AM-01,0.68,75,0.51,30.0,0.0,7,MTU/NCSC Identify: SMEs lacking an up-to-date hardware inventory
+RC,RECOVER,RC.RP-03,0.68,58,0.3944,32.0,0.0,3,MTU/NCSC Recover: SMEs without website backups
+PR,PROTECT,PR.AA-04,0.48,74,0.3552,46.0,0.0,2,MTU/NCSC Protect: SMEs without MFA on all business-critical applications
+PR,PROTECT,PR.AA-02,0.48,0,0.0,47.0,0.0,2,
+PR,PROTECT,PR.DS-01,2.68,0,0.0,1.0,2.68,28,
+PR,PROTECT,PR.IR-02,0.63,0,0.0,35.0,0.0,2,
+ID,IDENTIFY,ID.RA-05,0.0,82,0.0,,0.0,0,MTU/NCSC Identify: SMEs not covered by cyber insurance
+ID,IDENTIFY,ID.RA-06,0.0,0,0.0,,0.0,0,
+PR,PROTECT,PR.DS-10,2.68,0,0.0,3.0,0.0,28,
+PR,PROTECT,PR.DS-02,2.68,0,0.0,2.0,0.0,28,
+ID,IDENTIFY,ID.RA-07,1.59,0,0.0,23.0,0.0,18,
+PR,PROTECT,PR.AT-02,0.0,74,0.0,,0.0,0,MTU/NCSC top-10 #4: Cybersecurity Training (annual)
+ID,IDENTIFY,ID.RA-10,0.0,0,0.0,,0.0,0,
+PR,PROTECT,PR.AT-01,0.0,74,0.0,,0.0,0,MTU/NCSC top-10 #4: Cybersecurity Training (annual)
+PR,PROTECT,PR.AA-06,0.0,0,0.0,,0.0,0,
+ID,IDENTIFY,ID.RA-09,1.95,0,0.0,17.0,0.0,14,
+PR,PROTECT,PR.IR-04,0.63,0,0.0,37.0,0.0,2,
+PR,PROTECT,PR.IR-03,0.91,0,0.0,28.0,0.0,6,
+DE,DETECT,DE.AE-02,2.63,0,0.0,12.0,0.0,27,
+PR,PROTECT,PR.PS-01,2.59,0,0.0,14.0,0.0,26,
+RS,RESPOND,RS.AN-06,0.0,0,0.0,,0.0,0,
+RS,RESPOND,RS.MI-01,0.0,0,0.0,,0.0,0,
+RS,RESPOND,RS.MA-05,0.0,0,0.0,,0.0,0,
+RS,RESPOND,RS.MA-04,0.0,0,0.0,,0.0,0,
+RS,RESPOND,RS.MA-03,0.0,64,0.0,,0.0,0,MTU/NCSC Respond: SMEs with IR plan but never tested
+RS,RESPOND,RS.MA-02,0.0,78,0.0,,0.0,0,MTU/NCSC top-10 #3: Cyber Incident Response Plan (documented and tested)
+RS,RESPOND,RS.MA-01,0.0,78,0.0,,0.0,0,MTU/NCSC top-10 #3: Cyber Incident Response Plan (documented and tested)
+RS,RESPOND,RS.CO-03,0.0,0,0.0,,0.0,0,
+RS,RESPOND,RS.CO-02,0.0,0,0.0,,0.0,0,
+RS,RESPOND,RS.AN-08,0.0,0,0.0,,0.0,0,
+RS,RESPOND,RS.AN-07,0.0,0,0.0,,0.0,0,
+RS,RESPOND,RS.AN-03,0.0,0,0.0,,0.0,0,
+ID,IDENTIFY,ID.RA-03,0.0,0,0.0,,0.0,0,
+RC,RECOVER,RC.RP-06,0.0,0,0.0,,0.0,0,
+RC,RECOVER,RC.RP-05,0.63,0,0.0,39.0,0.0,2,
+RC,RECOVER,RC.RP-04,0.0,0,0.0,,0.0,0,
+RC,RECOVER,RC.RP-02,0.63,0,0.0,36.0,0.0,2,
+RC,RECOVER,RC.CO-04,0.63,0,0.0,33.0,0.0,2,
+RC,RECOVER,RC.CO-03,0.0,0,0.0,,0.0,0,
+PR,PROTECT,PR.PS-06,0.86,0,0.0,29.0,0.0,5,
+PR,PROTECT,PR.PS-05,0.0,49,0.0,,0.0,0,MTU/NCSC Detect: SMEs with antivirus not fully enabled across all devices
+PR,PROTECT,PR.PS-04,0.0,0,0.0,,0.0,0,
+PR,PROTECT,PR.PS-03,0.0,0,0.0,,0.0,0,
+ID,IDENTIFY,ID.RA-04,0.0,0,0.0,,0.0,0,
+ID,IDENTIFY,ID.RA-01,2.63,0,0.0,7.0,0.0,27,
+ID,IDENTIFY,ID.RA-02,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.OC-04,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.RM-04,0.0,82,0.0,,0.0,0,MTU/NCSC Identify: SMEs not covered by cyber insurance
+GV,GOVERN,GV.RM-03,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.RM-02,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.RM-01,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.PO-02,0.0,88,0.0,,0.0,0,MTU/NCSC top-10 #7: Documented Cybersecurity Policy
+GV,GOVERN,GV.PO-01,0.0,88,0.0,,0.0,0,MTU/NCSC top-10 #7: Documented Cybersecurity Policy
+GV,GOVERN,GV.OV-03,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.OV-02,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.OV-01,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.OC-05,0.04,0,0.0,52.0,0.0,1,
+GV,GOVERN,GV.OC-03,0.0,0,0.0,,0.0,0,
+DE,DETECT,DE.AE-03,2.63,0,0.0,8.0,0.0,27,
+GV,GOVERN,GV.OC-02,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.OC-01,0.0,0,0.0,,0.0,0,
+DE,DETECT,DE.CM-06,2.63,0,0.0,13.0,0.0,27,
+DE,DETECT,DE.CM-03,1.99,0,0.0,16.0,0.0,25,
+DE,DETECT,DE.CM-02,1.59,0,0.0,22.0,0.0,18,
+DE,DETECT,DE.CM-01,2.68,0,0.0,4.0,0.0,28,
+DE,DETECT,DE.AE-08,0.0,0,0.0,,0.0,0,
+DE,DETECT,DE.AE-07,0.29,0,0.0,48.0,0.0,1,
+DE,DETECT,DE.AE-06,0.29,0,0.0,49.0,0.0,1,
+DE,DETECT,DE.AE-04,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.RM-05,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.RM-06,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.RM-07,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.RR-01,0.0,70,0.0,,0.0,0,MTU/NCSC top-10 #8: Dedicated Network Security Management
+ID,IDENTIFY,ID.IM-04,0.63,0,0.0,38.0,0.0,2,
+ID,IDENTIFY,ID.IM-03,2.63,0,0.0,9.0,0.0,27,
+ID,IDENTIFY,ID.IM-02,2.63,0,0.0,10.0,0.0,27,
+ID,IDENTIFY,ID.IM-01,2.63,0,0.0,11.0,0.0,27,
+ID,IDENTIFY,ID.AM-07,0.1,0,0.0,50.0,0.0,2,
+ID,IDENTIFY,ID.AM-05,0.0,0,0.0,,0.0,0,
+ID,IDENTIFY,ID.AM-04,0.62,0,0.0,40.0,0.0,9,
+ID,IDENTIFY,ID.AM-03,1.67,0,0.0,19.0,0.0,19,
+GV,GOVERN,GV.SC-10,1.29,0,0.0,24.0,0.0,11,
+GV,GOVERN,GV.SC-09,0.52,0,0.0,41.0,0.0,3,
+GV,GOVERN,GV.SC-08,0.52,0,0.0,42.0,0.0,3,
+GV,GOVERN,GV.SC-07,0.52,0,0.0,43.0,0.0,3,
+GV,GOVERN,GV.SC-06,0.52,0,0.0,44.0,0.0,3,
+GV,GOVERN,GV.SC-05,0.52,0,0.0,45.0,0.0,3,
+GV,GOVERN,GV.SC-04,0.04,0,0.0,51.0,0.0,1,
+GV,GOVERN,GV.SC-03,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.SC-02,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.SC-01,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.RR-04,0.0,74,0.0,,0.0,0,MTU/NCSC top-10 #4: Cybersecurity Training (annual)
+GV,GOVERN,GV.RR-03,0.0,0,0.0,,0.0,0,
+GV,GOVERN,GV.RR-02,0.0,70,0.0,,0.0,0,MTU/NCSC top-10 #8: Dedicated Network Security Management
+RS,RESPOND,RS.MI-02,0.0,0,0.0,,0.0,0,
